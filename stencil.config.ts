@@ -1,16 +1,16 @@
-import { Config } from "@stencil/core";
+import { Config } from '@stencil/core';
 
 // https://stenciljs.com/docs/config
 
 export const config: Config = {
-  namespace: "app",
-  globalStyle: "src/style.css",
+  globalStyle: 'src/global/app.css',
+  globalScript: 'src/global/app.ts',
   outputTargets: [
     {
-      type: "www",
+      type: 'www',
       // comment the following line to disable service workers in production
       serviceWorker: null,
-      baseUrl: "https://myapp.local/",
-    },
-  ],
+      baseUrl: 'https://myapp.local/'
+    }
+  ]
 };
